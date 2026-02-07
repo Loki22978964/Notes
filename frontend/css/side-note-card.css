@@ -1,0 +1,58 @@
+.note-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  padding: 16px 24px;
+  background-color: #fff;
+
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.note-item:hover {
+  background-color: #fafafa;
+}
+
+.note-item:focus,
+.note-item--active {
+  background-color: #fff9c4;
+  outline: none;
+}
+
+.note-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.note-item__title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+}
+
+.note-item__meta {
+  font-size: 13px;
+  color: #888;
+  font-weight: 400;
+}
+
+.note-item__preview {
+  font-size: 14px;
+  color: #666;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 700px) {
+  button.note-item{
+    width: 100%;
+  }
+}

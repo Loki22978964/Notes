@@ -1,0 +1,40 @@
+@import "./header.css";
+@import "./main.css";
+@import "./side-note-card.css";
+@import "./note-card.css";
+
+:root {
+  --main-yellow: #ffd52e;
+  --main-yellow-border: #e0c228;
+  --bg-gray: #f8f8f8;
+  --text-color: #333;
+  --sidebar-width: 300px;
+  --button-color: rgb(28, 28, 30);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+
+  height: 100vh;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.sidebar::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar, .main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+

@@ -1,0 +1,36 @@
+/* <div class="main__note-card">
+      <h2 class="main__note-card-title">Welcome</h2>
+      <p class="main__note-card-date">January 5, 2026 at 10:30 AM</p>
+      <br />
+      <p class="main__note-card-text">Start taking notes with this minimal, iOS-inspired notes app.</p>
+      <p class="main__note-card-text">Click on the items on the left to see how layout works!</p>
+    </div> */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__note-card {
+  height: calc(100vh - 40px);
+  max-width: 660px;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.319);
+
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+@media (min-width: 700px) {
+  .main__note-card {
+    width: 100%;
+    padding: 32px;
+  }
+}
