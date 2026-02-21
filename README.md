@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class IAnimal {
         <<interface>>
@@ -29,3 +30,4 @@ classDiagram
     IOwner <|.. Owner
     Owner "1" o-- "0..1" IAnimal : has pet
     AnimalSimulationService "1" *-- "*" IOwner : manages
+```
