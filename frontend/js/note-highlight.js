@@ -14,7 +14,7 @@ export function initNoteHighlight() {
       const founfNote = buttons.find(item => item.id == noteID);
 
       if(founfNote){
-        console.log('+' , noteID)
+        // console.log('+' , noteID)
         updateMainContent(founfNote);
       }
       else{

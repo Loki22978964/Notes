@@ -19,7 +19,7 @@ export function createNewNote() {
   };
     buttons.unshift(newNoteHTML);
 
-    console.log("Current buttons array:", buttons);
+    // console.log("Current buttons array:", buttons);
 
     showButtons();
 

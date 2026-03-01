@@ -5,9 +5,9 @@ export function updateMainContent(note) {
   const dataElement = document.querySelector(".main__note-card-date");
   const textContainer = document.querySelector(".main__note-card-text");
 
-  console.log("1. Функція отримала нотатку:", note);
-    console.log("2. Контейнер для тексту знайдено?", textContainer);
-    console.log("3. Текст для вставки:", note?.text);
+  // console.log("1. Функція отримала нотатку:", note);
+  //   console.log("2. Контейнер для тексту знайдено?", textContainer);
+  //   console.log("3. Текст для вставки:", note?.text);
 
   if (titleElement) titleElement.textContent = "New Note"; 
   if (dataElement) dataElement.textContent = note.created;

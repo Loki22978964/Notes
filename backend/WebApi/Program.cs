@@ -24,19 +24,26 @@ namespace WebApi
                 });
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+
             var app = builder.Build();
 
             app.UseCors();
-            
-            // Налаштовуємо Swagger для роботи у всіх середовищах
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1");
             });
-            
+
             app.MapControllers();
-            
+
             await app.RunAsync();
         }
     }
